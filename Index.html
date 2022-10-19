@@ -5,11 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Projeto Individual 2</title>
+    <link rel="stylesheet" href="./criptografia.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    />
+    <title>Criptográfico</title>
 </head>
 <body>
-    
+    <form class="decoder">
+        <h1>Tudo no sigilo</h1>
+  
+        <textarea
+          id="entrada"
+          cols="55"
+          rows="7"
+          required
+          placeholder=" Escreva aqui a sua mensagem..."
+        ></textarea>
+  
+        <fieldset>
+          <legend>Método</legend>
+          <select class="metodo" required>
+            <option>Escolha o método</option>
+            <option>Cifra de Cesar</option>
+            <option>Base 64</option>
+          </select>
+        </fieldset>
     
     <script src="./Scripts/main.js"></script>
+    <script src="./Scripts/cifraDeCesar.js"></script>
 </body>
 </html>
