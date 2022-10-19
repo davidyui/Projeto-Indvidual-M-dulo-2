@@ -35,8 +35,47 @@
             <option>Base 64</option>
           </select>
         </fieldset>
+        
+        <div class="passo">
+            <input
+              id="chave"
+              type="range"
+              value="21"
+              min="1"
+              max="99"
+              oninput="this.nextElementSibling.value = this.value"
+            />
+            <output>21</output>
+          </div>
     
-    <script src="./Scripts/main.js"></script>
+          <fieldset class="tipo">
+            <div class="coddecod">
+              <input
+                type="radio"
+                name="coddecod"
+                value="msg-codigo"
+                id="codificar"
+                checked
+              />
+              <label for="codificar">Codificar</label>
+            </div>
+            <div class="cod-decod">
+              <input
+                type="radio"
+                name="coddecod"
+                value="codigo-msg"
+                id="decodificar"
+              />
+              <label for="decodificar">Decodificar</label>
+            </div>
+          </fieldset>
+    
+          <output class="saida"><p class="resposta"></p></output>
+    
+          <button class="enviar">Codificar Mensagem!</button>
+        </form>
+    
+    <script src="./Scripts/base64.js"></script>
     <script src="./Scripts/cifraDeCesar.js"></script>
 </body>
 </html>
